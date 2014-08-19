@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script href="lib/js/jquery.min.js"></script>
+    <script href="lib/js/bootstrap.min.js"></script>
+    <script href="assets/js/main.js"></script>
+    <meta charset="UTF-8">
+    <title>Welcome to my portfolio site!</title>
+</head>
+
+<body>
+    <section class="section" id="section1">
+        <div class="container main">
+            <h1 class="main-p ">Hello :D</h1>
+            <h2 class-"sub-p">My name is Robert and I am a(n aspiring) web
+                developer based in Los Angeles.
+            </h2>
+        </div>
+    </section>
+
+     <section class="section" id="section2">
+        <div class="container">
+            <h1>Personal Projects</h1>
+            <ul class="projects clearfix row og-grid" id="og-grid">
+                <li class="viewport col-xs-4">
+                    <a href="http://djshrek.github.io/quizapp" data-largesrc="assets/images/quiz.png" data-title="Marvel Quiz" data-description="Test your Marvel knowledge!">
+                        <span class="dark-background">Marvel Quiz <em>HTML5, CSS3, Javascript</em></span>
+                        <img src="assets/images/quiz.png" alt="">
+                    </a>
+
+                    <div class="og-expander">
+                            <div class="og-expander-inner">
+                                <span class="og-close"></span>
+                                <div class="og-fullimg">
+                                    <div class="og-loading"></div>
+                                    <img src="assets/images/quiz.png">
+                                </div>
+                                <div class="og-details">
+                                    <h3>Veggies sunt bona vobis</h3>
+                                    <p>Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.</p>
+                                    <a href="http://cargocollective.com/jaimemartinez/">Visit website</a>
+                                </div>
+                            </div>
+                    </div>
+                </li>
+
+                <li class="viewport col-xs-4">
+                    <a href="http://dotadeals.herokuapp.com" data-largesrc="assets/images/dotadeals.png" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+                        <span class="dark-background">DOTA Deals <em>Ruby On Rails, Backbone.js, Heroku</em></span>
+                        <img src="assets/images/dotadeals.png" alt="">
+                    </a>
+                </li>
+
+                <li class="viewport col-xs-4 no-margin">
+                    <a href="http://djshrek.github.io/todoapp">
+                        <span class="dark-background">JFDI Todo List<em>HTML5, CSS3, Javascript, Backbone.js, Parse</em></span>
+                        <img src="assets/images/todolist.png" alt="">
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </section>
+
+     <section class="section" id="section3">
+        <div class="container">
+          <h1>Techincal Skills</h1>
+        </div>
+    </section>
+
+     <section class="section" id="section4">
+        <div class="container">
+          <h1>About</h1>
+        </div>
+    </section>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://modernizr.com/downloads/modernizr-latest.js"></script>
+
+ <script type="text/javascript">
+    $(document).ready(function() {
+    $('.viewport').mouseenter(function(e) {
+        $(this).children('a').children('img').animate({ height: '332', left: '0', top: '-20', width: '450'}, 100);
+        $(this).children('a').children('span').fadeIn(200);
+    }).mouseleave(function(e) {
+        $(this).children('a').children('img').animate({ height: '332', left: '-20', top: '-20', width: '500'}, 100);
+        $(this).children('a').children('span').fadeOut(200);
+    });
+});
+
+
+ </script>
+</body>
+</html>

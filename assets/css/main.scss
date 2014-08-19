@@ -1,0 +1,280 @@
+$color1: #2c3e50;
+$color2: #d35400;
+$color3: #e67e22;
+$color4: #f1c40f;
+$color5: #f39c12;
+$color6: #e74c3c;
+$color7: #c0392b; /* Pomegranate */
+$color8: #d35400; /* Pumpkin */
+
+.section {
+    color: #fff;
+    padding: 100px 0 160px 0;
+    height: 700px;
+}
+
+#section1 {
+    background: url('../images/joshua3.jpg') center center no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100%;
+    .main {
+        margin-top: 75px;
+    }
+    h1 {
+        color: white;
+        font-size: 100px;
+    }
+    h2 {
+        width: 75%;
+    }
+}
+
+#section2 {
+    background-color: $color5;
+
+    a {
+            text-decoration: none;
+        }
+
+.projects {
+    margin-top: 80px;
+    li {
+        margin: 0 5px;
+    }
+}
+
+.viewport {
+    float: left;
+    height: 299px;
+    margin: 0 9px 9px 0;
+    overflow: hidden;
+    position: relative;
+    width: 350px;
+    box-sizing: border-box;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* This is so that the 2nd thumbnail in each row fits snugly. You will want to add a similar
+   class to the last thumbnail in each row to get rid of the margin-right. */
+.no-margin {
+    margin-right: 0;
+}
+
+/* --- Link configuration that contains the image and label ----------------------------- */
+.viewport a {
+    display: block;
+    position: relative;
+}
+
+.viewport a img {
+    height: 332px;
+    left: -20px;
+    position: relative;
+    top: -20px;
+    width: 500px;
+}
+
+/* --- Label configuration -------------------------------------------------------------- */
+.viewport a span {
+    display: none;
+    font-size: 3.0em;
+    font-weight: bold;
+    height: 100%;
+    padding-top: 85px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    z-index: 100;
+}
+    .viewport a span em {
+        display: block;
+        font-size: 0.45em;
+        font-weight: normal;
+    }
+
+/* --- Dark hover background ------------------------------------------------------------ */
+    .dark-background {
+        background-color: rgba(15, 15, 15, 0.8);
+        color: #fff;
+        text-shadow: #000 0px 0px 20px;
+    }
+    .dark-background em {
+        color: #ccc;
+    }
+/* --- Image Preview Grid Begins Here ------------------------------------------------------------ */
+
+    .og-grid li.og-expanded > a::after {
+        top: auto;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-bottom-color: #ddd;
+        border-width: 15px;
+        left: 50%;
+        margin: -20px 0 0 -15px;
+    }
+
+    .og-expander {
+        position: absolute;
+        background: #ddd;
+        top: auto;
+        left: 0;
+        width: 100%;
+        margin-top: 10px;
+        text-align: left;
+        height: 0;
+        overflow: hidden;
+    }
+     
+    .og-expander-inner {
+        padding: 50px 30px;
+        height: 100%;
+    }
+
+    .og-close {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+ 
+    .og-close::before,
+    .og-close::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        height: 1px;
+        background: #888;
+        transform: rotate(45deg);
+    }
+     
+    .og-close::after {
+        transform: rotate(-45deg);
+    }
+     
+    .og-close:hover::before,
+    .og-close:hover::after {
+        background: #333;
+    }
+
+    .og-fullimg,
+    .og-details {
+        width: 50%;
+        float: left;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .og-details {
+    padding: 0 40px 0 20px;
+    }
+     
+    .og-fullimg {
+        text-align: center;
+    }
+     
+    .og-fullimg img {
+        display: inline-block;
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .og-details h3 {
+    font-weight: 300;
+    font-size: 52px;
+    padding: 40px 0 10px;
+    margin-bottom: 10px;
+    }
+     
+    .og-details p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #999;
+    }
+     
+    .og-details a {
+        font-weight: 700;
+        font-size: 16px;
+        color: #333;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding: 10px 20px;
+        border: 3px solid #333;
+        display: inline-block;
+        margin: 30px 0 0;
+        outline: none;
+    }
+     
+    .og-details a::before {
+        content: '\2192';
+        display: inline-block;
+        margin-right: 10px;
+    }
+     
+    .og-details a:hover {
+        border-color: #999;
+        color: #999;
+    }
+
+    .og-loading {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #ddd;
+        box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ccc;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -25px 0 0 -25px;
+        animation: loader 0.5s infinite ease-in-out both;
+    }
+     
+    @keyframes loader {
+        0% { background: #ddd; }
+        33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+        66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+    }
+
+    @media screen and (max-width: 830px) {
+ 
+    .og-expander h3 { font-size: 32px; }
+    .og-expander p { font-size: 13px; }
+    .og-expander a { font-size: 12px; }
+     
+    }
+     
+    @media screen and (max-width: 650px) {
+     
+        .og-fullimg { display: none; }
+        .og-details { float: none; width: 100%; }
+         
+    }
+
+}
+
+#section3 {
+    background-color: $color8;
+
+}
+
+#section4 {
+    background-color: $color7;
+
+}
+
+
+/*** MISC ***/
+
