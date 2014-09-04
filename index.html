@@ -4,11 +4,6 @@
     <link rel="stylesheet" href="lib/css/bootstrap.min.css">
     <link rel="stylesheet" href="lib/css/grid.css">
     <link rel="stylesheet" href="assets/css/main.css">
-    <script href="lib/js/jquery.min.js"></script>
-    <script href="lib/js/bootstrap.min.js"></script>
-    <script href="lib/js/modernizr.custom.js"></script>
-    <script href="lib/js/grid.js"></script>
-    <script href="assets/js/main.js"></script>
     <meta charset="UTF-8">
     <title>Welcome to my portfolio site!</title>
 </head>
@@ -32,21 +27,6 @@
                         <span class="dark-background">Marvel Quiz <em>HTML5, CSS3, Javascript</em></span>
                         <img src="assets/images/quiz.png" alt="">
                     </a>
-
-                    <div class="og-expander">
-                            <div class="og-expander-inner">
-                                <span class="og-close"></span>
-                                <div class="og-fullimg">
-                                    <div class="og-loading"></div>
-                                    <img src="assets/images/quiz.png">
-                                </div>
-                                <div class="og-details">
-                                    <h3>Veggies sunt bona vobis</h3>
-                                    <p>Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.</p>
-                                    <a href="http://cargocollective.com/jaimemartinez/">Visit website</a>
-                                </div>
-                            </div>
-                    </div>
                 </li>
 
                 <li class="viewport col-xs-4">
@@ -78,8 +58,11 @@
           <h1>About</h1>
         </div>
     </section>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-<script type="text/javascript" src="http://modernizr.com/downloads/modernizr-latest.js"></script>
+    <script src="lib/js/jquery.min.js"></script>
+    <script src="lib/js/bootstrap.min.js"></script>
+    <script src="lib/js/modernizr.custom.js"></script>
+    <script src="lib/js/grid.js"></script>
+    <script src="assets/js/main.js"></script>
 
  <script type="text/javascript">
     $(document).ready(function() {
@@ -92,6 +75,9 @@
     });
 });
 
+  $(function(){
+    Grid.init();
+  })
 
  </script>
 </body>
