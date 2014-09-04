@@ -37,14 +37,14 @@
 
 .og-expander {
 	position: absolute;
-	background: #ddd;
+	background: #ecf0f1;
 	top: auto;
 	left: 0;
 	width: 100%;
 	margin-top: 10px;
 	text-align: left;
 	height: 0;
-	overflow: hidden;
+	overflow: hidden; 
 }
 
 .og-expander-inner {
