@@ -1,5 +1,9 @@
-// Image Preview Begins here
+// Section One Scroll Button Begins here
 
-
-
-// Image Preview Ends here
+$(".section1-btn").click(function(){
+	$window = $(window);
+	$height = $window.height();
+	$('html, body').animate({
+        scrollTop: $height
+    }, 1750);
+});

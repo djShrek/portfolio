@@ -7,10 +7,14 @@ $color6: #e74c3c;
 $color7: #c0392b; /* Pomegranate */
 $color8: #d35400; /* Pumpkin */
 
+body, html {
+    height: 100%;
+}
+
 .section {
     color: #fff;
     padding: 100px 0 160px 0;
-    height: 700px;
+    min-height: 100%;
 }
 
 #section1 {
@@ -19,7 +23,6 @@ $color8: #d35400; /* Pumpkin */
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    min-height: 100%;
     .main {
         margin-top: 75px;
     }
@@ -29,6 +32,9 @@ $color8: #d35400; /* Pumpkin */
     }
     h2 {
         width: 75%;
+    }
+    .section1-btn {
+        font-size: 50px;
     }
 }
 
