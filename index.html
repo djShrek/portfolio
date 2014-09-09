@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="lib/css/bootstrap.min.css">
     <link rel="stylesheet" href="lib/css/grid.css">
     <link rel="stylesheet" href="lib/css/devicons.css">
+    <link rel="stylesheet" href="lib/css/badges.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <meta charset="UTF-8">
     <title>Welcome to my portfolio site!</title>
@@ -16,43 +17,67 @@
             <h2 class-"sub-p">My name is Robert and I am a(n aspiring) web
                 developer based in Los Angeles.
             </h2>
-            <a href="#"><span class="glyphicon glyphicon-circle-arrow-down section1-btn"></span></a>
+            <a class="section1-btn" href="#"><span class="glyphicon glyphicon-circle-arrow-down"></span></a>
         </div>
     </section>
 
      <section class="section" id="section2">
         <div class="container">
             <h1>Personal Projects</h1>
-            <ul class="projects og-grid" id="og-grid">
-                <li class="viewport">
-                    <a href="http://djshrek.github.io/quizapp" data-largesrc="assets/images/quiz.png" data-title="Marvel Quiz" data-description="My first Javascript application built with vanilla Javascript. This project taught me to model data using basic Javascript data structures, traversing the DOM, and manipulating DOM elements. I've been a big fan of Marvel comics since I was 6 years old, so I wanted my project to have comc-book / Marvel theme. Enjoy!">
-                        <span class="dark-background">Marvel Quiz <em>HTML5, CSS3, Javascript</em></span>
-                        <img src="assets/images/quiz.png" alt="The Marvel Quiz!">
-                    </a>
-                </li>
+            <div class="projects">
+                <ul class="og-grid clearfix" id="og-grid">
+                    <li class="viewport">
+                        <a href="http://djshrek.github.io/quizapp" data-largesrc="assets/images/quiz.png" data-title="Marvel Quiz" data-description="My first Javascript application built with vanilla Javascript. This project taught me to model data using basic Javascript data structures, traversing the DOM, and manipulating DOM elements. I've been a big fan of Marvel comics since I was 6 years old, so I wanted my project to have comc-book / Marvel theme. Enjoy!">
+                            <span class="dark-background">Marvel Quiz <em>HTML5, CSS3, Javascript</em></span>
+                            <img src="assets/images/quiz.png" alt="The Marvel Quiz!">
+                        </a>
+                    </li>
 
-                <li class="viewport">
-                    <a href="http://dotadeals.herokuapp.com" data-largesrc="assets/images/dotadeals.png" data-title="DOTA Deals" data-description="An application that facillitates an easy way for players to trade their DOTA 2 items. The app is built on the Ruby on Rails framework with PostGreSQL as the data storage, Unicorn as the application server, and deployed on the Heroku cloud server. Try it out with steam name: dotatest35, password: dotatestaccount. 
-                    ">
-                        <span class="dark-background">DOTA Deals <em>Ruby On Rails, Backbone.js, Heroku</em></span>
-                        <img src="assets/images/dotadeals.png" alt="Dota Deals">
-                    </a>
-                </li>
+                    <li class="viewport">
+                        <a href="http://dotadeals.herokuapp.com" data-largesrc="assets/images/dotadeals.png" data-title="DOTA Deals" data-description="An application that facillitates an easy way for players to trade their DOTA 2 items. The app is built on the Ruby on Rails framework with PostGreSQL as the data storage, Unicorn as the application server, and deployed on the Heroku cloud server. Try it out with steam name: dotatest35, password: dotatestaccount. 
+                        ">
+                            <span class="dark-background">DOTA Deals <em>Ruby On Rails, Backbone.js, Heroku</em></span>
+                            <img src="assets/images/dotadeals.png" alt="Dota Deals">
+                        </a>
+                    </li>
 
-                <li class="viewport no-margin">
-                    <a href="http://djshrek.github.io/todoapp" data-largesrc="assets/images/todolist.png" data-title="JFDI Todo List" data-description="A typical 'Todo-list' application built using the Backbone.js client-side framework and named after 'JFDI' (Just F*CKING DO IT) philosophy. It also uses the jQuery, underscore.js, Bootstrap 2.3 framework to power the client side logic while the back end and data-store is maintained by Parse.com">
-                        <span class="dark-background">JFDI Todo List<em>HTML5, CSS3, Javascript, Backbone.js, Parse</em></span>
-                        <img src="assets/images/todolist.png" alt="THE JFDI Todo List">
-                    </a>
-                </li>
-            </ul>
+                    <li class="viewport no-margin">
+                        <a href="http://djshrek.github.io/todoapp" data-largesrc="assets/images/todolist.png" data-title="JFDI Todo List" data-description="A typical 'Todo-list' application built using the Backbone.js client-side framework and named after 'JFDI' (Just F*CKING DO IT) philosophy. It also uses the jQuery, underscore.js, Bootstrap 2.3 framework to power the client side logic while the back end and data-store is maintained by Parse.com">
+                            <span class="dark-background">JFDI Todo List<em>HTML5, CSS3, Javascript, Backbone.js, Parse</em></span>
+                            <img src="assets/images/todolist.png" alt="THE JFDI Todo List">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
 
      <section class="section" id="section3">
         <div class="container">
-          <h1>Techincal Skills</h1>
-          <h2>Front-End</h2>
+          <h1>Technical Skills : </h1>
+          <br/>
+          <span class="brace">{</span><p><big>"Front-End" : [<span class="devicons devicons-html5"></span>, <span class="devicons devicons-css3"></span>, <span class="devicons devicons-sass"></span>, <span class="devicons devicons-compass"></span>,<span class="devicons devicons-javascript"></span>, <span class="devicons devicons-jquery"></span>, <span class="devicons devicons-backbone"></span>],</big></p>
+          <br/>
+          <br/>
+          <p><big>"Back-End" : [<span class="devicons devicons-ruby"></span>, <span class="devicons devicons-ruby_on_rails"></span>,<span class="devicons devicons-nodejs"></span>,<span class="devicons devicons-mysql"></span>, <span class="devicons devicons-postgresql"></span>],</big></p>
+          <br/>
+          <br/>
+          <p><big>"Misc." : [<span class="devicons devicons-bootstrap"></span>,<span class="devicons devicons-github_badge"></span>,<span class="devicons devicons-bower"></span>, <span class="devicons devicons-heroku"></span>,<span class="devicons devicons-nginx"></span> ]</big></p>
+         <span class="brace">}</span>
+          <!--
+          <h1>Technical Skills : </h1>
+          <br/>
+          <h1>{</h1><p><big>"Front-End" : [<span class="devicons devicons-html5"></span>HTML5, <span class="devicons devicons-css3">CSS3</span>, <span class="devicons devicons-sass">Sass</span>, <span class="devicons devicons-compass">Compass</span>,<span class="devicons devicons-javascript">Javascript</span>, <span class="devicons devicons-jquery">jQuery</span>, <span class="devicons devicons-backbone">Backbone</span>],</big></p>
+          <br/>
+          <br/>
+          <p><big>"Back-End" : [<span class="devicons devicons-ruby">Ruby</span>, <span class="devicons devicons-ruby_on_rails">Ruby On Rails</span>,<span class="devicons devicons-nodejs">node.js</span>,<span class="devicons devicons-mysql">mySQL</span>, <span class="devicons devicons-postgresql">postgresql</span>],</big></p>
+          <br/>
+          <br/>
+          <p><big>"Misc." : [<span class="devicons devicons-bootstrap">Bootstrap Framework</span>,<span class="devicons devicons-github_badge">Github</span>,<span class="devicons devicons-bower">Bower</span>, <span class="devicons devicons-heroku">Heroku</span>,<span class="devicons devicons-nginx">NGINX</span> ]</big></p>
+         <h1>}</h1>
+        -->
+<!--
+          <h2>"Front-End" :  { </h2>
           <ul>
             <li><span class="devicons devicons-html5">HTML5</span></li>
             <li><span class="devicons devicons-css3">CSS3</span></li>
@@ -78,18 +103,31 @@
             <li><span class="devicons devicons-heroku">Heroku</span></li>
             <li><span class="devicons devicons-nginx">NGINX</span></li>
           </ul>
+-->
         </div>
     </section>
 
      <section class="section" id="section4">
         <div class="container">
-          <h1>About</h1>
+         <h1>About</h1>
         </div>
     </section>
+
+    <section class="section" id="section5">
+        <div class="container">
+          <h1>TreeHouse Education</h1>
+          <div>
+            <div class="report-card treehouse"></div>
+          </div>
+        </div>
+    </section>
+
+
     <script src="lib/js/jquery.min.js"></script>
     <script src="lib/js/bootstrap.min.js"></script>
     <script src="lib/js/modernizr.custom.js"></script>
     <script src="lib/js/grid.js"></script>
+    <script src="lib/js/reportcard.js"></script>
     <script src="assets/js/main.js"></script>
 
  <script type="text/javascript">
@@ -105,7 +143,13 @@
 
   $(function(){
     Grid.init();
-  })
+  });
+
+  $('.report-card.treehouse').reportCard({
+    userName: 'robertho',
+    site: 'treehouse',
+    badgesAmount: 10
+});
 
  </script>
 </body>

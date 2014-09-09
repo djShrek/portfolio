@@ -5,5 +5,9 @@ $(".section1-btn").click(function(){
 	$height = $window.height();
 	$('html, body').animate({
         scrollTop: $height
-    }, 1750);
+    }, 1850);
+});
+
+$(".section1-btn").hover(function(){
+	console.log($(window).height());
 });
