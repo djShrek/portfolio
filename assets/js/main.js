@@ -8,6 +8,8 @@ $(".section1-btn").click(function(){
     }, 1850);
 });
 
-$(".section1-btn").hover(function(){
-	console.log($(window).height());
+$(".main-profile").mouseenter(function(){
+	$(this).attr("src", "assets/images/groot.png");
+}).mouseleave(function(){
+	$(this).attr("src", "assets/images/profile.jpeg");
 });
