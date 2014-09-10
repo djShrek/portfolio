@@ -107,9 +107,11 @@ body, html {
   #section3 span {
     font-size: 60px; }
   #section3 .brace {
-    font-size: 70px; }
+    font-size: 60px; }
   #section3 .inner-brace {
-    margin-left: 50px; }
+    margin-left: 40px; }
+  #section3 .inner-attrs {
+    margin-left: 80px; }
 
 /*-------------- SECTION4 ---------------*/
 #section4 {
