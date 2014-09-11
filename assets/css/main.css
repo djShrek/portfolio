@@ -164,17 +164,19 @@ body, html {
   #section6 span {
     font-size: 1.5em; }
   #section6 .hello {
-    font-size: 100px;
-    text-decoration: underline;
-    margin-bottom: 0.8em; }
+    font-size: 75px;
+    margin-bottom: 0.8em;
+    text-decoration: none; }
   #section6 .contact-list {
     text-decoration: none; }
     #section6 .contact-list li {
       list-style-type: none; }
       #section6 .contact-list li h4 {
-        color: #1abc9c; }
+        color: #1abc9c;
+        text-shadow: 0 1px 0 #fff; }
       #section6 .contact-list li p {
         color: #7f8c8d;
-        font-size: 1.5em; }
+        font-size: 1.5em;
+        text-shadow: 0 1px 0 #fff; }
 
 /*** MISC ***/
