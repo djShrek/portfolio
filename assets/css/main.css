@@ -101,7 +101,9 @@ body, html {
 /*-------------- SECTION3 ---------------*/
 #section3 {
   font-family: 'Ubuntu', sans-serif;
-  background-color: #496158; }
+  background-color: #496158;
+  min-width: 500px;
+  overflow-x: hidden; }
   #section3 p {
     font-size: 30px; }
   #section3 span {
@@ -111,12 +113,12 @@ body, html {
   #section3 .inner-brace {
     margin-left: 40px; }
   #section3 .inner-attrs {
-    margin-left: 80px; }
+    margin-left: 180px; }
 
 /*-------------- SECTION4 ---------------*/
 #section4 {
   font-family: 'Droid Serif', serif;
-  font-size: 2.72em;
+  font-size: 2.4em;
   font-weight: 300;
   line-height: 1.8em;
   color: black;

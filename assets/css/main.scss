@@ -147,6 +147,8 @@ body, html {
 #section3 {
     font-family: 'Ubuntu', sans-serif;
     background-color: $theme4;
+    min-width: 500px;
+    overflow-x: hidden;
     p {
         font-size: 30px;
     }
@@ -168,7 +170,7 @@ body, html {
 
 #section4 {
     font-family: 'Droid Serif', serif;
-    font-size: 2.72em;
+    font-size: 2.4em;
     font-weight: 300;
     line-height: 1.8em;
     color: black;
