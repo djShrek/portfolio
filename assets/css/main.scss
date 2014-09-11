@@ -16,6 +16,8 @@ $theme5: #7D7D44;
 $flat1: #1abc9c; /* turquoise */
 $flat2: #34495e; /* wet asphalt */
 $flat3: #ecf0f1; /* clouds */
+$flat4: #bdc3c7; /* silver */
+$flat5: #7f8c8d; /* abestos */
 
 
 body {
@@ -200,10 +202,48 @@ body, html {
     color: $flat1;
     text-align: center;
     p {
+        font:"Helvetica", "Arial", sans-serif;
         font-size: 1.72em;
+        font-weight: 300;
+        color: #6b6b6b;
+    }
+    a {
+        text-decoration: none;
+    }
+    i { 
+        border: 1px solid $flat4;
+        background-color: $flat4;
+        border-radius: 50%;
+        margin: 0.95em;
+        padding: 0.85em;
+        color: white;
+        font-size: 4em;
+        transition: background-color 1s;
+        &:hover {
+            background-color: $flat1;
+        }
+      }
+    span {
+        font-size: 1.5em;
     }
     .hello {
-        font-size: 75px;
+        font-size: 100px;
+        text-decoration: underline;
+        margin-bottom: 0.8em;
+    }
+    .contact-list {
+        
+        text-decoration:none;
+        li {
+           list-style-type: none;
+           h4 {
+            color: $flat1;
+           }
+            p {
+            color: $flat5;
+            font-size: 1.5em;
+           }
+        }
     }
 }
 

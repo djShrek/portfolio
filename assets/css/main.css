@@ -3,6 +3,8 @@
 /* turquoise */
 /* wet asphalt */
 /* clouds */
+/* silver */
+/* abestos */
 body {
   overflow-x: hidden; }
 
@@ -142,8 +144,37 @@ body, html {
   color: #1abc9c;
   text-align: center; }
   #section6 p {
-    font-size: 1.72em; }
+    font: "Helvetica", "Arial", sans-serif;
+    font-size: 1.72em;
+    font-weight: 300;
+    color: #6b6b6b; }
+  #section6 a {
+    text-decoration: none; }
+  #section6 i {
+    border: 1px solid #bdc3c7;
+    background-color: #bdc3c7;
+    border-radius: 50%;
+    margin: 0.95em;
+    padding: 0.85em;
+    color: white;
+    font-size: 4em;
+    transition: background-color 1s; }
+    #section6 i:hover {
+      background-color: #1abc9c; }
+  #section6 span {
+    font-size: 1.5em; }
   #section6 .hello {
-    font-size: 75px; }
+    font-size: 100px;
+    text-decoration: underline;
+    margin-bottom: 0.8em; }
+  #section6 .contact-list {
+    text-decoration: none; }
+    #section6 .contact-list li {
+      list-style-type: none; }
+      #section6 .contact-list li h4 {
+        color: #1abc9c; }
+      #section6 .contact-list li p {
+        color: #7f8c8d;
+        font-size: 1.5em; }
 
 /*** MISC ***/
