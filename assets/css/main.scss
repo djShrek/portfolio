@@ -13,6 +13,12 @@ $theme3: #869C80;
 $theme4: #496158;
 $theme5: #7D7D44;
 
+$flat1: #1abc9c; /* turquoise */
+$flat2: #34495e; /* wet asphalt */
+$flat3: #ecf0f1; /* clouds */
+$flat4: #bdc3c7; /* silver */
+$flat5: #7f8c8d; /* abestos */
+
 
 body {
     overflow-x: hidden;
@@ -147,6 +153,8 @@ body, html {
 #section3 {
     font-family: 'Ubuntu', sans-serif;
     background-color: $theme4;
+    min-width: 500px;
+    overflow-x: hidden;
     p {
         font-size: 30px;
     }
@@ -154,10 +162,13 @@ body, html {
         font-size: 60px;
     }
     .brace {
-        font-size: 70px;
+        font-size: 60px;
     }
     .inner-brace {
-        margin-left: 50px;
+        margin-left: 40px;
+    }
+    .inner-attrs {
+        margin-left: 180px;
     }
 }
 
@@ -165,7 +176,7 @@ body, html {
 
 #section4 {
     font-family: 'Droid Serif', serif;
-    font-size: 2.72em;
+    font-size: 2.4em;
     font-weight: 300;
     line-height: 1.8em;
     color: black;
@@ -187,7 +198,54 @@ body, html {
 }
 
 #section6 {
-    color: black;
+    background-color: $flat3;
+    color: $flat1;
+    text-align: center;
+    p {
+        font:"Helvetica", "Arial", sans-serif;
+        font-size: 1.72em;
+        font-weight: 300;
+        color: #6b6b6b;
+    }
+    a {
+        text-decoration: none;
+    }
+    i { 
+        border: 1px solid $flat4;
+        background-color: $flat4;
+        border-radius: 50%;
+        margin: 0.95em;
+        padding: 0.85em;
+        color: white;
+        font-size: 4em;
+        transition: background-color 1s;
+        &:hover {
+            background-color: $flat1;
+        }
+      }
+    span {
+        font-size: 1.5em;
+    }
+    .hello {
+        font-size: 75px;
+        margin-bottom: 0.8em;
+        text-decoration: none;
+    }
+    .contact-list {
+        text-decoration:none;
+        li {
+           list-style-type: none;
+           h4 {
+            color: $flat1;
+            text-shadow: 0 1px 0 #fff;
+           }
+            p {
+            color: $flat5;
+            font-size: 1.5em;
+            text-shadow: 0 1px 0 #fff;
+           }
+        }
+    }
 }
 
 
