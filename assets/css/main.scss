@@ -13,6 +13,10 @@ $theme3: #869C80;
 $theme4: #496158;
 $theme5: #7D7D44;
 
+$flat1: #1abc9c; /* turquoise */
+$flat2: #34495e; /* wet asphalt */
+$flat3: #ecf0f1; /* clouds */
+
 
 body {
     overflow-x: hidden;
@@ -192,7 +196,15 @@ body, html {
 }
 
 #section6 {
-    color: black;
+    background-color: $flat3;
+    color: $flat1;
+    text-align: center;
+    p {
+        font-size: 1.72em;
+    }
+    .hello {
+        font-size: 75px;
+    }
 }
 
 

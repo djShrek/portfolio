@@ -1,5 +1,8 @@
 /* Pomegranate */
 /* Pumpkin */
+/* turquoise */
+/* wet asphalt */
+/* clouds */
 body {
   overflow-x: hidden; }
 
@@ -135,6 +138,12 @@ body, html {
   color: black; }
 
 #section6 {
-  color: black; }
+  background-color: #ecf0f1;
+  color: #1abc9c;
+  text-align: center; }
+  #section6 p {
+    font-size: 1.72em; }
+  #section6 .hello {
+    font-size: 75px; }
 
 /*** MISC ***/

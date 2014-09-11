@@ -5,7 +5,7 @@ $(".section1-btn").click(function(){
 	$height = $window.height();
 	$('html, body').animate({
         scrollTop: $height
-    }, 1850);
+    }, 1000);
 });
 
 $(".main-profile").mouseenter(function(){
