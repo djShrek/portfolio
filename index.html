@@ -15,8 +15,45 @@
     <title>Welcome to my portfolio site!</title>
 </head>
 
+
 <body>
-    <section class="section" id="section1">
+
+  <nav id="cd-vertical-nav" >
+    <ul>
+      <li>
+        <a href="#section1" data-number="1">
+          <span class="cd-dot"></span>
+          <span class="cd-label">Intro</span>
+        </a>
+      </li>
+      <li>
+        <a href="#section2" data-number="2">
+          <span class="cd-dot"></span>
+          <span class="cd-label">Portfolio</span>
+        </a>
+      </li>
+      <li>
+        <a href="#section3" data-number="3">
+          <span class="cd-dot"></span>
+          <span class="cd-label">Technical Skills</span>
+        </a>
+      </li>
+      <li>
+        <a href="#section4" data-number="4">
+          <span class="cd-dot white"></span>
+          <span class="cd-label white-label">About</span>
+        </a>
+      </li>
+      <li>
+        <a href="#section5" data-number="5">
+          <span class="cd-dot white"></span>
+          <span class="cd-label white-label">Contact</span>
+        </a>
+      </li>
+    </ul>
+</nav>
+
+    <section class="section cd-section" id="section1">
         <div class="container main">
             <h1 class="main-p ">Hello :D</h1>
             <h2 class-"sub-p">My name is Robert and I am a(n aspiring) web
@@ -26,7 +63,7 @@
         </div>
     </section>
 
-     <section class="section" id="section2">
+     <section class="section cd-section" id="section2">
         <div class="container">
             <h1>Personal Projects</h1>
             <div class="projects">
@@ -57,7 +94,7 @@
         </div>
     </section>
 
-     <section class="section" id="section3">
+     <section class="section cd-section" id="section3">
         <div class="container">
          <h1><span class="brace">{</span> "Technical Skills" : </h1> 
           <br/>
@@ -104,7 +141,7 @@
         </div>
     </section>
 
-     <section class="section" id="section4">
+     <section class="section cd-section" id="section4">
         <div class="container text-center">
          <img class="img-circle text-center main-profile" src="assets/images/profile.jpeg" alt="">
          <p class="bio">
@@ -112,17 +149,8 @@
          </p>
         </div>
     </section>
-<!--
-    <section class="section" id="section5">
-        <div class="container">
-          <h1>TreeHouse Education</h1>
-          <div>
-            <div class="report-card treehouse"></div>
-          </div>
-        </div>
-    </section>
--->
-     <section class="section" id="section6">
+
+     <section class="section cd-section" id="section5">
         <div class="container">
           <h1 class="hello">Say Hello!</h1>
           <p>I am currently looking for a Ruby Engineer and/or front-end web developer position! Please
@@ -168,6 +196,7 @@
 
     <script src="lib/js/jquery.min.js"></script>
     <script src="lib/js/bootstrap.min.js"></script>
+    <script src="lib/js/modernizr.js"></script> 
     <script src="lib/js/modernizr.custom.js"></script>
     <script src="lib/js/grid.js"></script>
     <script src="lib/js/reportcard.js"></script>

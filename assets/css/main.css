@@ -18,6 +18,95 @@ body, html {
   padding: 100px 0 160px 0;
   min-height: 100%; }
 
+/*** NAV BEGINS HERE ***/
+.no-touch #cd-vertical-nav {
+  position: fixed;
+  right: 40px;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1; }
+  .no-touch #cd-vertical-nav ul {
+    list-style-type: none; }
+
+.no-touch #cd-vertical-nav li {
+  text-align: right; }
+
+.no-touch #cd-vertical-nav a {
+  display: inline-block;
+  /* prevent weird movements on hover when you use a CSS3 transformation - webkit browsers */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.no-touch #cd-vertical-nav a:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.no-touch #cd-vertical-nav a span {
+  float: right;
+  display: inline-block;
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  -o-transform: scale(0.6);
+  transform: scale(0.6); }
+
+.no-touch #cd-vertical-nav a:hover span {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1); }
+
+.no-touch #cd-vertical-nav a:hover .cd-label {
+  opacity: 1; }
+
+.no-touch #cd-vertical-nav a.is-selected .cd-dot {
+  background-color: white; }
+
+.no-touch #cd-vertical-nav a.is-selected .cd-dot.white {
+  background-color: black; }
+
+.no-touch #cd-vertical-nav .cd-dot {
+  position: relative;
+  /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
+  top: 8px;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #7f8c8d;
+  -webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
+  -moz-transition: -moz-transform 0.2s, background-color 0.5s;
+  transition: transform 0.2s, background-color 0.5s;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%; }
+
+.no-touch #cd-vertical-nav .cd-label {
+  position: relative;
+  margin-right: 10px;
+  padding: .4em .5em;
+  color: white;
+  font-size: 18px;
+  font-size: 1.275rem;
+  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
+  opacity: 0;
+  -webkit-transform-origin: 100% 50%;
+  -moz-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  -o-transform-origin: 100% 50%;
+  transform-origin: 100% 50%; }
+
+/*** NAV ENDS HERE ***/
 #section1 {
   background: url("../images/joshua3.jpg") center center no-repeat fixed;
   -webkit-background-size: cover;
@@ -137,20 +226,17 @@ body, html {
     color: red; }
 
 #section5 {
-  color: black; }
-
-#section6 {
   background-color: #ecf0f1;
   color: #1abc9c;
   text-align: center; }
-  #section6 p {
+  #section5 p {
     font: "Helvetica", "Arial", sans-serif;
     font-size: 1.72em;
     font-weight: 300;
     color: #6b6b6b; }
-  #section6 a {
+  #section5 a {
     text-decoration: none; }
-  #section6 i {
+  #section5 i {
     border: 1px solid #bdc3c7;
     background-color: #bdc3c7;
     border-radius: 50%;
@@ -159,22 +245,22 @@ body, html {
     color: white;
     font-size: 4em;
     transition: background-color 1s; }
-    #section6 i:hover {
+    #section5 i:hover {
       background-color: #1abc9c; }
-  #section6 span {
+  #section5 span {
     font-size: 1.5em; }
-  #section6 .hello {
+  #section5 .hello {
     font-size: 75px;
     margin-bottom: 0.8em;
     text-decoration: none; }
-  #section6 .contact-list {
+  #section5 .contact-list {
     text-decoration: none; }
-    #section6 .contact-list li {
+    #section5 .contact-list li {
       list-style-type: none; }
-      #section6 .contact-list li h4 {
+      #section5 .contact-list li h4 {
         color: #1abc9c;
         text-shadow: 0 1px 0 #fff; }
-      #section6 .contact-list li p {
+      #section5 .contact-list li p {
         color: #7f8c8d;
         font-size: 1.5em;
         text-shadow: 0 1px 0 #fff; }
