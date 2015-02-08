@@ -19,6 +19,9 @@ $flat3: #ecf0f1; /* clouds */
 $flat4: #bdc3c7; /* silver */
 $flat5: #7f8c8d; /* abestos */
 
+* {
+  box-sizing: border-box
+}
 
 body {
     overflow-x: hidden;
@@ -172,17 +175,12 @@ body, html {
         }
 
     .projects {
-        min-width: 1169px;
         margin-top: 80px;
         li {
             margin: 0 5px;
         }
     }
-
     .viewport {
-        /*
-        position: relative; ??
-        */
         height: 299px;
         margin: 0 9px 9px 0;
         float: left;
@@ -244,12 +242,26 @@ body, html {
     }
 }
 
+@media screen and (max-width: 768px) {
+  #section2 {
+    ul.og-grid {
+      li {
+        margin: 15px 0;
+      }
+    }
+    .og-expander-inner {
+      height: auto !important;
+    }
+  }
+}
+
+/*-------------- END SECTION2 -----------*/
+
 /*-------------- SECTION3 ---------------*/
 
 #section3 {
     font-family: 'Ubuntu', sans-serif;
     background-color: $theme4;
-    min-width: 500px;
     overflow-x: hidden;
     p {
         font-size: 30px;
@@ -268,6 +280,20 @@ body, html {
     }
 }
 
+@media screen and (max-width: 768px) {
+  #section3 {
+    p {
+      font-size: 20px;;
+    }
+    span {
+      display: none;
+    }
+    .inner-brace, .inner-attrs {
+      margin: 0;
+    }
+  }
+}
+
 /*-------------- SECTION4 ---------------*/
 
 #section4 {
@@ -278,8 +304,10 @@ body, html {
     color: black;
     background-color: white;
     img {
-        width: 15%;
-        height: 15%;
+      display: block;
+      margin: 0 auto;
+      max-width: 175px;
+      max-height: 175px;
     }
     .bio {
         margin-top: 75px;
@@ -289,12 +317,14 @@ body, html {
     }
 }
 
+/*------------ END -----------------------*/
+
 #section5 {
     background-color: $flat3;
     color: $flat1;
     text-align: center;
     p {
-        font:"Helvetica", "Arial", sans-serif;
+        font: "Helvetica", "Arial", sans-serif;
         font-size: 1.72em;
         font-weight: 300;
         color: #6b6b6b;

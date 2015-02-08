@@ -5,6 +5,9 @@
 /* clouds */
 /* silver */
 /* abestos */
+* {
+  box-sizing: border-box; }
+
 body {
   overflow-x: hidden; }
 
@@ -142,14 +145,10 @@ body, html {
   #section2 a {
     text-decoration: none; }
   #section2 .projects {
-    min-width: 1169px;
     margin-top: 80px; }
     #section2 .projects li {
       margin: 0 5px; }
   #section2 .viewport {
-    /*
-    position: relative; ??
-    */
     height: 299px;
     margin: 0 9px 9px 0;
     float: left;
@@ -192,11 +191,16 @@ body, html {
   #section2 .dark-background em {
     color: #ccc; }
 
+@media screen and (max-width: 768px) {
+  #section2 ul.og-grid li {
+    margin: 15px 0; }
+  #section2 .og-expander-inner {
+    height: auto !important; } }
+/*-------------- END SECTION2 -----------*/
 /*-------------- SECTION3 ---------------*/
 #section3 {
   font-family: 'Ubuntu', sans-serif;
   background-color: #496158;
-  min-width: 500px;
   overflow-x: hidden; }
   #section3 p {
     font-size: 30px; }
@@ -209,6 +213,13 @@ body, html {
   #section3 .inner-attrs {
     margin-left: 180px; }
 
+@media screen and (max-width: 768px) {
+  #section3 p {
+    font-size: 20px; }
+  #section3 span {
+    display: none; }
+  #section3 .inner-brace, #section3 .inner-attrs {
+    margin: 0; } }
 /*-------------- SECTION4 ---------------*/
 #section4 {
   font-family: 'Droid Serif', serif;
@@ -218,13 +229,16 @@ body, html {
   color: black;
   background-color: white; }
   #section4 img {
-    width: 15%;
-    height: 15%; }
+    display: block;
+    margin: 0 auto;
+    max-width: 175px;
+    max-height: 175px; }
   #section4 .bio {
     margin-top: 75px; }
   #section4 .glyphicon-heart {
     color: red; }
 
+/*------------ END -----------------------*/
 #section5 {
   background-color: #ecf0f1;
   color: #1abc9c;
