@@ -147,11 +147,12 @@ body, html {
   #section2 .projects {
     margin-top: 80px; }
     #section2 .projects li {
-      margin: 0 5px; }
+      margin: 5px; }
+    #section2 .projects li.photostache {
+      background-color: white; }
   #section2 .viewport {
     height: 299px;
     margin: 0 9px 9px 0;
-    float: left;
     overflow: hidden;
     width: 350px;
     box-sizing: border-box;
